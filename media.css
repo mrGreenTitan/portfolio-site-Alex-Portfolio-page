@@ -1,0 +1,1578 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --hover: #C0C0E8;
+}
+
+/* ЭФФЕКТ ДЛЯ ПК (Мышка) */
+@media (hover: hover) and (pointer: fine) {
+    .header-content > div:nth-child(3) > button:hover,
+    section.about .wrap-about > button:hover {
+        transform: translateZ(0) rotate(-10deg);
+        box-shadow: inset 0 0 0 1px var(--white);
+    }
+
+    .header-content > div:nth-child(3) > button:active,
+    section.about .wrap-about > button:active {
+        transform: translateZ(0) scale(0.96) rotate(-2deg);
+    }
+}
+
+
+@media (min-width: 1152px) and (max-width: 1920px) {
+    /*********************************** HEADER START  */
+    .header-navigation {
+        padding-left: clamp(60px, -45px + 9.115vw, 130px);
+        padding-right: clamp(60px, -45px + 9.115vw, 130px);
+    }
+
+    .header-navigation > nav ul > li > a {
+        font-size: clamp(20px, 8px + 1.042vw, 28px);
+    }
+    
+    .header-text > h1 {
+        font-size: clamp(162px, -45px + 17.969vw, 300px);
+    }
+
+    .header-content > div:nth-child(1) > p {
+        font-size: clamp(20px, 8px + 1.042vw, 28px);
+    }
+
+    .header-content > div:nth-child(2) > .wrap-img {
+        width: clamp(250px, -275px + 45.573vw, 600px);
+        height: clamp(225px, -247.5px + 41.016vw, 540px);
+    }
+
+    .header-content > div:nth-child(2) > .wrap-img > img {
+        --translate-y: clamp(-140px, 47.5px - 9.766vw, -65px);
+        transform: translateY(var(--translate-y));
+    }
+
+    .header-content > div:nth-child(3) > button {
+        font-size: clamp(20px, 8px + 1.042vw, 28px);
+        padding: clamp(15px, 7.5px + 0.651vw, 20px) clamp(60px, 30px + 2.604vw, 80px);
+    }
+    /*********************************** HEADER END  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*********************************** MAIN START  */
+    
+    /**************** MAIN START SECTION MODELS START */
+
+    section.models > .layout-one > .wrap-layout-one,
+    section.models > .layout-two > .wrap-layout-two {
+        height: clamp(363px, 232.5px + 11.328vw, 450px);
+    }
+
+    /****************   MAIN START SECTION MODELS END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /**************** MAIN START SECTION ABOUT START */
+
+    section.about .wrap-about {
+        gap: clamp(30px, -45px + 6.51vw, 80px);
+    }
+
+    section.about .wrap-about > h1 {
+        font-size: clamp(162px, -45px + 17.969vw, 300px);
+    }
+
+    section.about .wrap-about > p {
+        font-size: clamp(20px, 8px + 1.042vw, 28px);
+    }
+
+    section.about .wrap-about > button {
+        font-size: clamp(20px, 8px + 1.042vw, 28px);
+        padding: clamp(15px, 7.5px + 0.651vw, 20px) clamp(60px, 30px + 2.604vw, 80px);
+    }
+
+    section.about .wrap-about > img:nth-of-type(2) {
+        top: clamp(620px, 320px + 26.04vw, 820px);
+        left: clamp(-45px, -412.5px + 31.9vw, 200px);
+    }
+
+    /****************   MAIN START SECTION ABOUT END */
+
+
+    /****************   MAIN START SECTION SERVICES START */
+
+    section.services > div > .wrap-serv-cont {
+        padding: clamp(80px, -25px + 9.1146vw, 150px) 0;
+    }
+
+    section.services > div > .wrap-serv-cont > h1 {
+        font-size: clamp(162px, -45px + 17.969vw, 300px);
+    }
+
+    /****************     MAIN START SECTION SERVICES END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /****************     MAIN START SECTION PROJECTS START */
+
+    section.projects {
+        padding: clamp(80px, -25px + 9.1146vw, 150px) 0 0;
+    }
+
+    section.projects::before {
+        top: clamp(-50px, -2.604vw + 0px, -30px);
+    }
+
+    section.projects > div > h1 {
+        font-size: clamp(162px, -45px + 17.969vw, 300px);
+    }
+
+    .section-clients > .smile-one {
+        top: clamp(325px, 512.5px - 9.766vw, 400px);
+        right: clamp(0px, -225px + 19.531vw, 150px);
+    }
+
+    .section-clients > .smile-one > img {
+        width: clamp(150px, 75px + 6.51vw, 200px);
+    }
+
+    .section-clients > .smile-two > img {
+        width: clamp(150px, 75px + 6.51vw, 200px);
+    }
+
+    .section-clients > .wrap-clients-slider {
+        padding-left: clamp(80px, 19.996px + 5.208vw, 120px); 
+        padding-right: clamp(80px, 19.996px + 5.208vw, 120px);
+    }
+
+    .section-clients .comments > .comment {
+        width: clamp(500px, 349.992px + 13.021vw, 600px);
+    }
+
+    /****************     MAIN START SECTION PROJECTS END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /****************       MAIN START SECTION TOUCH START */
+
+    section.touch {
+        padding: 200px 0px clamp(300px, 0px + 26.042vw, 500px) 0px;
+    }
+
+    section.touch .sp-raptor {
+        left: clamp(0px, -135px + 11.719vw, 90px);
+    }
+
+    section.touch .sp-raptor > img {
+        width: clamp(150px, 0px + 13.021vw, 250px);
+    }
+
+    section.touch .wrap-touch-inputs {
+        margin-right: clamp(0px, -75px + 6.51vw, 50px);
+    }
+
+    /****************         MAIN START SECTION TOUCH END */
+
+    /***********************************   MAIN END  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /************************************* FOOTER START  */
+
+    .foot-content > .foot-text > h1 {
+        font-size: clamp(100px, 55px + 3.906vw, 130px);
+    }
+
+    .foot-content > .foot-info {
+        gap: clamp(50px, -175px + 19.531vw, 200px);
+    }
+
+    .elemets > div > svg {
+        width: clamp(142px, -0.5px + 12.37vw, 237px);
+    }
+
+    /************************************* FOOTER END  */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1152px) {
+    /*********************************** HEADER START  */
+    html {
+        scroll-padding-top: 96px;
+    }
+
+    #about,
+    #services,
+    #projects,
+    #clients,
+    #contact {
+        scroll-margin-top: 96px;
+    }
+
+    header {
+        padding-top: 96px;
+    }
+
+    .container {
+        padding: 0 clamp(40px, -140px + 23.438vw, 130px);
+    }
+
+    .header-navigation {
+        padding: 22px clamp(40px, -140px + 23.438vw, 130px) 16px;
+    }
+
+    .header-navigation > nav ul {
+        gap: clamp(24px, -24px + 6.25vw, 48px);
+    }
+
+    .header-navigation > nav ul > li > a {
+        font-size: clamp(16px, 8px + 1.042vw, 20px);
+    }
+    
+    .header-text > h1 {
+        font-size: clamp(125px, 51px + 9.635vw, 162px);
+    }
+
+    .header-content > div:nth-child(1) > p {
+        margin-top: clamp(0px, -100px + 13.021vw, 50px);
+        font-size: clamp(14px, 2px + 1.563vw, 20px);
+    }
+
+    .header-content > div:nth-child(2) > .wrap-img {
+        width: clamp(230px, 190px + 5.208vw, 250px);
+        height: clamp(207px, 171px + 4.688vw, 225px);
+    }
+
+    .header-content > div:nth-child(2) > .wrap-img > img {
+        transform: translateY(-65px);
+    }
+
+    .header-content > div:nth-child(3) > button {
+        font-size: clamp(16px, 8px + 1.042vw, 20px);
+        padding: clamp(10px, 0px + 1.302vw, 15px) clamp(50px, 30px + 2.604vw, 60px);
+    }
+    /*********************************** HEADER END  */
+
+
+
+
+
+
+
+
+
+    /*********************************** MAIN START  */
+
+    /**************** MAIN START SECTION MODELS START */
+
+    section.models > .logos {
+        height: clamp(80px, 6px + 9.6354vw, 117px);
+    }
+
+    section.models > .logos > .wrap-logos {
+        height: clamp(80px, 6px + 9.6354vw, 117px);
+    }
+
+    section.models > .logos > .wrap-logos > .logo > img {
+        width: clamp(120px, 60px + 7.8125vw, 150px);
+    }
+
+    section.models > .layout-one > .wrap-layout-one,
+    section.models > .layout-two > .wrap-layout-two {
+        height: clamp(300px, 174px + 16.40625vw, 363px);
+    }
+
+    /****************   MAIN START SECTION MODELS END */
+
+
+
+    /****************   MAIN START SECTION ABOUT START */
+
+    section.about .wrap-about {
+        gap: 30px;
+    }
+
+    section.about .wrap-about > h1 {
+        font-size: clamp(125px, 51px + 9.635vw, 162px);
+    }
+
+    section.about .wrap-about > p {
+        font-size: clamp(14px, 2px + 1.563vw, 20px);
+    }
+
+    section.about .wrap-about > p::before {
+        left: -255px;
+    }
+
+    section.about .wrap-about > button {
+        font-size: clamp(16px, 8px + 1.042vw, 20px);
+        padding: clamp(10px, 0px + 1.302vw, 15px) clamp(50px, 30px + 2.604vw, 60px);
+    }
+
+    section.about .wrap-about > img:nth-of-type(1) {
+        width: clamp(200px, -160px + 46.875vw, 380px);
+        top: clamp(195px, 525px - 28.646vw, 305px);
+        left: clamp(-38px, -214px + 22.92vw, 50px);
+    }
+
+    section.about .wrap-about > img:nth-of-type(2) {
+        width: clamp(130px, -110px + 31.25vw, 250px);
+        top: clamp(620px, 320px + 26.04vw, 820px);
+        left: clamp(-45px, 390px - 37.76vw, 100px);
+    }
+
+    section.about .wrap-about > img:nth-of-type(3) {
+        width: clamp(180px, -60px + 31.25vw, 300px);
+    }
+
+    /****************   MAIN START SECTION ABOUT END */
+
+
+
+
+
+
+
+
+
+    /****************   MAIN START SECTION SERVICES START */
+
+    section.services > div > .wrap-serv-cont {
+        padding: 80px 0;
+    }
+
+    section.services > div > .wrap-serv-cont > h1 {
+        font-size: clamp(125px, 51px + 9.635vw, 162px);
+    }
+
+    section.services > div > .wrap-serv-cont > .wrap-serv-inf > div > div:nth-of-type(2) > h2 {
+        font-size: clamp(28px, 22.286px + 1.7857vw, 36px);
+    }
+
+    /****************     MAIN START SECTION SERVICES END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /****************     MAIN START SECTION PROJECTS START */
+
+    section.projects {
+        padding: 80px 0 0;
+    }
+
+    section.projects::before {
+        top: -30px;
+    }
+
+    section.projects > div > h1 {
+        font-size: clamp(125px, 51px + 9.635vw, 162px);
+    }
+
+    section.projects > div > .wrap-cards > .card {
+        padding: 30px 10px;
+    }
+
+    section.projects > div > .wrap-cards > .card > .wrap-lower-screen {
+        width: 100%;
+        height: clamp(300px, -284px + 76.042vw, 592px);
+        cursor: pointer;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory; /* Принудительно "магнитим" по оси X */
+        scroll-behavior: smooth;  /* Плавная прокрутка */
+        -webkit-overflow-scrolling: touch; /* Плавность для iOS */
+    }
+
+    section.projects > div > .wrap-cards > .card > .wrap-lower-screen::-webkit-scrollbar {
+        display: none;
+    }
+
+    section.projects > div > .wrap-cards > .card > .wrap-lower-screen.active {
+        cursor: grabbing;
+        cursor: -webkit-grabbing;
+    }
+
+    section.projects > div > .wrap-cards > .card > .card-bottom > .lower-screen {
+        width: 100%;
+        gap: 30px;
+    }
+
+    section.projects > div > .wrap-cards > .card > .card-bottom > .lower-screen > .wrap-img {
+        flex: 0 0 90%;           /* Слайд занимает 80% ширины экрана */
+        scroll-snap-align: center;
+
+        display: flex;
+
+        user-select: none;
+    }
+
+    section.projects > div > .wrap-cards > .card > .card-bottom > .lower-screen > .wrap-img > img {
+        width: 100%;
+        height: 100%;
+        border-radius: 25px;
+    }
+
+    section.projects > div > .wrap-cards > .card > .wrap-lower-screen {
+        height: clamp(320px, 120px + 26.042vw, 420px);
+        padding: 0 0 14px;
+        cursor: grab;
+        overflow-y: hidden;
+        scroll-padding-inline: 10px;
+        overscroll-behavior-x: contain;
+        scrollbar-width: thin;
+        scrollbar-color: var(--accent-purple) rgba(0, 0, 0, 0.18);
+    }
+
+    section.projects > div > .wrap-cards > .card > .wrap-lower-screen::-webkit-scrollbar {
+        display: block;
+        height: 7px;
+    }
+
+    section.projects > div > .wrap-cards > .card > .wrap-lower-screen::-webkit-scrollbar-track {
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.12);
+    }
+
+    section.projects > div > .wrap-cards > .card > .wrap-lower-screen::-webkit-scrollbar-thumb {
+        border-radius: 999px;
+        background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple), var(--accent-pink));
+    }
+
+    section.projects > div > .wrap-cards > .card > .card-bottom > .lower-screen {
+        flex: 0 0 max-content;
+        width: max-content;
+        min-width: 100%;
+        gap: clamp(16px, -12px + 3.646vw, 30px);
+        padding-inline: 10px;
+    }
+
+    section.projects > div > .wrap-cards > .card > .card-bottom > .lower-screen > .wrap-img {
+        flex: 0 0 clamp(420px, 66vw, 620px);
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 22px;
+        background: rgba(255, 255, 255, 0.04);
+        box-shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
+    }
+
+    section.projects > div > .wrap-cards > .card > .card-bottom > .lower-screen > .wrap-img > img {
+        border-radius: 22px;
+        object-fit: cover;
+        object-position: center;
+        pointer-events: none;
+    }
+
+    .section-clients > .smile-one {
+        top: clamp(400px, 430px - 2.604vw, 410px);
+        right: 0px;
+    }
+
+    .section-clients > .smile-one > img {
+        width: clamp(100px, 0px + 13.021vw, 150px);
+    }
+
+    .section-clients > .smile-two {
+        bottom: clamp(270px, 407.5px - 7.161vw, 325px);
+    }
+
+    .section-clients > .smile-two > img {
+        width: 150px;
+    }
+
+    .section-clients > h1 {
+        font-size: clamp(110px, 70px + 5.208vw, 130px);
+        margin-right: clamp(0px, -170px + 22.135vw, 85px);
+    }
+
+    .section-clients > .wrap-clients-slider {
+        padding-left: clamp(40px, -40px + 10.417vw, 80px); 
+        padding-right: clamp(40px, -40px + 10.417vw, 80px);
+    }
+
+    .section-clients .comments {
+        gap: clamp(10px, -10px + 2.604vw, 20px);
+    }
+
+    .section-clients .comments > .comment {
+        flex-direction: column;
+        align-items: center;
+        width: clamp(250px, -250px + 65.104vw, 500px);
+    }
+
+    /****************     MAIN START SECTION PROJECTS END */
+
+
+
+
+
+
+
+
+
+
+    /****************       MAIN START SECTION TOUCH START */
+
+    section.touch {
+        padding: 200px 0px clamp(200px, 0px + 26.042vw, 300px) 0px;
+    }
+
+    section.touch > div {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    section.touch .sp-raptor {
+        top: 320px;
+        left: clamp(10px, -210px + 28.646vw, 120px)
+    }
+
+    section.touch .sp-raptor > img {
+        width: 180px;
+    }
+
+    section.touch .wrap-touch-content {
+        width: 100%;
+        text-align: center;
+        gap: 30px;
+    }
+
+    section.touch .wrap-touch-content > h1 {
+        font-size: clamp(120px, 100px + 2.604vw, 130px);
+    }
+
+    section.touch .wrap-touch-content > h1 > br:nth-of-type(1) {
+        display: none;
+    }
+
+    section.touch .wrap-touch-inputs {
+        width: 100%;
+        margin-right: 0;
+        padding: 0;
+    }
+
+    section.touch .wrap-touch-inputs > .wrap-inp-mail_phone {
+        flex-direction: column;
+    }
+
+    section.touch .wrap-touch-inputs > .wrap-inp-mail_phone > div {
+        width: 100%;
+    }
+
+    /****************         MAIN START SECTION TOUCH END */
+
+    /************************************* MAIN END  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /************************************* FOOTER START  */
+
+    footer {
+        padding: clamp(60px, -20px + 10.417vw, 100px) 0;
+    }
+
+    footer::before {
+        top: clamp(-85px, -25px - 5.208vw, -65px);
+    }
+
+    .foot-content > .foot-text > h1 {
+        font-size: clamp(70px, 10px + 7.813vw, 100px);
+    }
+
+    .foot-content > .foot-info {
+        gap: 50px;
+    }
+
+    .foot-content > .foot-info > div > span {
+        font-size: clamp(22px, 10px + 1.563vw, 28px);
+    }
+
+    .foot-content > .foot-info > div > ul li,
+    .foot-content > .foot-info > div > ul > li > a {
+        font-size: clamp(16px, 12px + 0.521vw, 18px);
+    }
+
+    .elemets {
+        margin-left: clamp(-120px, 120px - 20.833vw, -40px);
+        margin-right: clamp(-130px, 140px - 23.438vw, -40px);
+    }
+
+    .elemets > div > svg {
+        width: clamp(96px, 4px + 11.979vw, 142px);
+    }
+
+    /************************************* FOOTER END  */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 320px) and (max-width: 768px) {
+    /*********************************** HEADER START  */
+    html {
+        scroll-padding-top: 88px;
+    }
+
+    #about,
+    #services,
+    #projects,
+    #clients,
+    #contact {
+        scroll-margin-top: 88px;
+    }
+
+    header {
+        padding-top: 88px;
+    }
+
+    .container {
+        padding: 0 clamp(20px, 5.714px + 4.464vw, 40px);
+    }
+
+    .header-navigation {
+        justify-content: flex-end;
+        padding: 16px clamp(20px, 5.714px + 4.464vw, 40px) 12px;
+    }
+
+    .header-navigation > nav {
+        position: absolute;
+        top: calc(100% + 8px);
+        left: clamp(20px, 5.714px + 4.464vw, 40px);
+        right: clamp(20px, 5.714px + 4.464vw, 40px);
+        width: auto;
+        padding: 14px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 22px;
+        background: rgba(0, 0, 0, 0.88);
+        box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translateY(-12px);
+        transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+    }
+
+    .header-navigation.menu-open > nav {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+
+    .header-navigation > nav ul {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+    }
+
+    .header-navigation > nav ul > li > a {
+        font-size: clamp(12px, 9.143px + 0.893vw, 16px);
+        justify-content: center;
+        width: 100%;
+        padding: 14px 8px;
+    }
+
+    .header-navigation > .burger {
+        display: flex;
+    }
+
+    .header-navigation > .burger > span {
+        display: block;
+        width: 48px;
+        height: 4px;
+        background-color: var(--white);
+        border-radius: 3px;
+        transition: transform 0.25s ease, opacity 0.25s ease, background-color 0.25s ease;
+    }
+
+    .header-navigation.menu-open > .burger > span:nth-of-type(1) {
+        transform: translateY(11px) rotate(45deg);
+    }
+
+    .header-navigation.menu-open > .burger > span:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    .header-navigation.menu-open > .burger > span:nth-of-type(3) {
+        transform: translateY(-11px) rotate(-45deg);
+    }
+    
+    .header-text > h1 {
+        font-size: clamp(50px, -3.571px + 16.741vw, 125px);
+    }
+
+    .header-content {
+        gap: clamp(20px, 5.714px + 4.464vw, 40px);
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-content > div:nth-child(1) > p {
+        text-align: center;
+        margin-top: 0;
+        font-size: clamp(15px, 5.714px + 2.902vw, 28px);
+    }
+
+    .header-content > div:nth-child(2) > .wrap-img {
+        width: clamp(240px, 90px + 46.875vw, 450px);
+        height: clamp(216px, 81px + 42.188vw, 405px);
+    }
+
+    .header-content > div:nth-child(2) > .wrap-img > img {
+        transform: translate(0, 0);
+    }
+
+    .header-content > div:nth-child(3) > button {
+        font-size: clamp(20px, 14.286px + 1.786vw, 28px);
+        padding: clamp(10px, 2.857px + 2.232vw, 20px) clamp(60px, 45.714px + 4.464vw, 80px);
+        transition: transform 0.2s ease-out;
+    }
+
+    .header-content > div:nth-child(3) > button:active {
+        transform: translateZ(0) scale(0.96) rotate(-2deg);
+        box-shadow: inset 0 0 0 1px var(--white);
+        transition: transform 0.05s linear;
+    }
+    /*********************************** HEADER END  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*********************************** MAIN START  */
+
+    main {
+        padding: 100px 0 0;
+    }
+
+    /**************** MAIN START SECTION MODELS START */
+
+    section.models {
+        gap: clamp(0px, -7.143px + 2.2321vw, 10px);
+    }
+
+    section.models > .logos {
+        height: clamp(60px, 45.714px + 4.4643vw, 80px);
+    }
+
+    section.models > .logos > .wrap-logos {
+        height: clamp(60px, 45.714px + 4.4643vw, 80px);
+        animation: scroll 90s linear infinite;
+    }
+
+    section.models > .logos > .wrap-logos > .logo {
+        padding: clamp(10px, 2.857px + 2.2321vw, 20px);
+    }
+
+    section.models > .logos > .wrap-logos > .logo > img {
+        width: clamp(100px, 85.714px + 4.4643vw, 120px);
+    }
+
+    section.models > .layout-one > .wrap-layout-one,
+    section.models > .layout-two > .wrap-layout-two {
+        height: clamp(180px, 94.286px + 26.7857vw, 300px);
+    }
+
+    /****************   MAIN START SECTION MODELS END */
+
+
+
+
+
+
+    /**************** MAIN START SECTION ABOUT START */
+
+    section.about .wrap-about {
+        gap: 30px;
+        padding: clamp(100px, -185.71px + 89.286vw, 500px) 0 clamp(50px, 14.286px + 11.161vw, 100px);
+    }
+
+    section.about .wrap-about > h1 {
+        font-size: clamp(50px, -3.571px + 16.741vw, 125px);
+    }
+
+    section.about .wrap-about > p {
+        font-size: clamp(15px, 5.714px + 2.902vw, 28px);
+    }
+
+    section.about .wrap-about > p::before {
+        left: clamp(-255px, calc(-32.14px - 29.02vw), -125px);
+    }
+
+    section.about .wrap-about > p > br {display: none;}
+
+    section.about .wrap-about > img:nth-of-type(1) {
+        width: clamp(100px, 28.57px + 22.321vw, 200px);
+        top: clamp(32px, -163px + 60.938vw, 305px);
+        left: -38px;
+    }
+
+    section.about .wrap-about > img:nth-of-type(2) {
+        width: clamp(75px, 35.72px + 12.277vw, 130px);
+        top: clamp(250px, -14.286px + 82.589vw, 620px);
+        left: clamp(-45px, 102px - 12.76vw, 4px);
+    }
+
+    section.about .wrap-about > img:nth-of-type(3) {
+        width: clamp(115px, 68.57px + 14.509vw, 180px);
+        top: clamp(88px, -113.43px + 62.946vw, 370px);
+    }
+
+    section.about .wrap-about > button {
+        font-size: clamp(20px, 14.286px + 1.786vw, 28px);
+        padding: clamp(10px, 2.857px + 2.232vw, 20px) clamp(60px, 45.714px + 4.464vw, 80px);
+        transition: transform 0.2s ease-out;
+    }
+
+    section.about .wrap-about > button:active {
+        transform: translateZ(0) scale(0.96) rotate(-2deg);
+        box-shadow: inset 0 0 0 1px var(--white);
+        transition: transform 0.05s linear;
+    }
+
+    /**************** MAIN START SECTION ABOUT END */
+
+
+
+
+
+
+
+    
+    /****************   MAIN START SECTION SERVICES START */
+
+    section.services {
+        padding: 0 clamp(5px, -5.714px + 3.3482vw, 20px);
+    }
+
+    section.services > .container {
+        padding-bottom: clamp(0px, 75.294px - 9.804vw, 40px);
+    }
+
+    section.services > div > .wrap-serv-cont {
+        gap: clamp(0px, -35.714px + 11.1607vw, 50px);
+        padding: clamp(40px, 11.429px + 8.9286vw, 80px) 0;
+    }
+
+    section.services > div > .wrap-serv-cont > h1 {
+        font-size: clamp(50px, -3.571px + 16.741vw, 125px);
+    }
+
+    section.services > div > .wrap-serv-cont > .wrap-serv-inf {
+        gap: clamp(0px, -28.571px + 8.9286vw, 40px);
+    }
+
+    section.services > div > .wrap-serv-cont > .wrap-serv-inf > div {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    section.services > div > .wrap-serv-cont > .wrap-serv-inf > div > div:nth-of-type(1) {
+        justify-content: center;
+        font-size: clamp(40px, -17.14px + 17.857vw, 120px);
+    }
+
+    section.services > div > .wrap-serv-cont > .wrap-serv-inf > div > div:nth-of-type(2) > h2 {
+        font-size: clamp(20px, 11.429px + 2.6786vw, 32px);
+    }
+
+    section.services > div > .wrap-serv-cont > .wrap-serv-inf > div > div:nth-of-type(2) > p {
+        font-size: clamp(15px, 5.714px + 2.902vw, 28px);
+    }
+
+    /****************     MAIN START SECTION SERVICES END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /****************     MAIN START SECTION PROJECTS START */
+
+    section.projects {
+        padding: clamp(0px, -70.588px + 19.608vw, 80px) 0 0;
+    }
+
+    section.projects > div > h1 {
+        font-size: clamp(50px, -3.571px + 16.741vw, 125px);
+    }
+
+    section.projects > div > .wrap-cards > .card {
+        padding: 30px 10px;
+    }
+
+    section.projects > div > .wrap-cards > .card > .card-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    section.projects > div > .wrap-cards > .card > .card-top > div {
+        gap: clamp(15px, 1.765px + 3.676vw, 30px);
+    }
+
+    section.projects > div > .wrap-cards > .card > .card-top > div > span {
+        font-size: clamp(60px, 42.353px + 4.902vw, 80px);
+    }
+
+    section.projects > div > .wrap-cards > .card > .card-top > div > div > span:nth-of-type(1) {
+        font-size: clamp(22px, 16.706px + 1.471vw, 28px);
+    }
+
+    section.projects > div > .wrap-cards > .card > .card-top > div > div > span:nth-of-type(2) {
+        font-size: clamp(14px, 10.471px + 0.98vw, 18px);
+    }
+
+    section.projects > div > .wrap-cards > .card > .card-top > a {
+        font-size: clamp(18px, 9.176px + 2.451vw, 28px);
+        padding: 15px clamp(40px, 22.353px + 4.902vw, 60px);
+    }
+    
+    section.projects > div > .wrap-cards > .card > .wrap-lower-screen {
+        width: 100%;
+        height: 300px;
+        cursor: pointer;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory; /* Принудительно "магнитим" по оси X */
+        scroll-behavior: smooth;  /* Плавная прокрутка */
+        -webkit-overflow-scrolling: touch; /* Плавность для iOS */
+    }
+
+    section.projects > div > .wrap-cards > .card > .wrap-lower-screen::-webkit-scrollbar {
+        display: none;
+    }
+
+    section.projects > div > .wrap-cards > .card > .wrap-lower-screen.active {
+        cursor: grabbing;
+        cursor: -webkit-grabbing;
+    }
+
+    section.projects > div > .wrap-cards > .card > .card-bottom > .lower-screen {
+        width: 100%;
+        gap: clamp(10px, -7.647px + 4.902vw, 30px);
+    }
+
+    section.projects > div > .wrap-cards > .card > .card-bottom > .lower-screen > .wrap-img {
+        flex: 0 0 80%;           /* Слайд занимает 80% ширины экрана */
+        scroll-snap-align: center;
+
+        display: flex;
+
+        user-select: none;
+    }
+
+    section.projects > div > .wrap-cards > .card > .card-bottom > .lower-screen > .wrap-img > img {
+        width: 100%;
+        height: 100%;
+        border-radius: 25px;
+    }
+
+    section.projects > div > .wrap-cards > .card > .wrap-lower-screen {
+        height: clamp(230px, 62vw, 300px);
+        padding: 0 0 12px;
+        cursor: grab;
+        overflow-y: hidden;
+        scroll-padding-inline: 8px;
+        overscroll-behavior-x: contain;
+        scrollbar-width: thin;
+        scrollbar-color: var(--accent-purple) rgba(0, 0, 0, 0.18);
+    }
+
+    section.projects > div > .wrap-cards > .card > .wrap-lower-screen::-webkit-scrollbar {
+        display: block;
+        height: 6px;
+    }
+
+    section.projects > div > .wrap-cards > .card > .wrap-lower-screen::-webkit-scrollbar-track {
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.12);
+    }
+
+    section.projects > div > .wrap-cards > .card > .wrap-lower-screen::-webkit-scrollbar-thumb {
+        border-radius: 999px;
+        background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple), var(--accent-pink));
+    }
+
+    section.projects > div > .wrap-cards > .card > .card-bottom > .lower-screen {
+        flex: 0 0 max-content;
+        width: max-content;
+        min-width: 100%;
+        gap: clamp(12px, 3.176px + 2.451vw, 22px);
+        padding-inline: 8px;
+    }
+
+    section.projects > div > .wrap-cards > .card > .card-bottom > .lower-screen > .wrap-img {
+        flex: 0 0 clamp(240px, 72vw, 310px);
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.04);
+        box-shadow: 0 14px 36px rgba(0, 0, 0, 0.25);
+    }
+
+    section.projects > div > .wrap-cards > .card > .card-bottom > .lower-screen > .wrap-img > img {
+        border-radius: 18px;
+        object-fit: cover;
+        object-position: center;
+        pointer-events: none;
+    }
+
+    .section-clients > .smile-one {
+        top: clamp(300px, 203.824px + 26.716vw, 409px);
+        right: 0px;
+    }
+
+    .section-clients > .smile-one > img {
+        width: 100px;
+    }
+
+    .section-clients > .smile-two {
+        bottom: clamp(325px, 428.529px - 13.48vw, 380px);
+    }
+
+    .section-clients > .smile-two > img {
+        width: clamp(100px, 55.882px + 12.255vw, 150px);
+    }
+
+    .section-clients > h1 {
+        font-size: clamp(45px, -12.353px + 15.931vw, 110px);
+        margin-right: 0;
+    }
+
+    .section-clients > .wrap-clients-slider {
+        padding-left: 40px; 
+        padding-right: 40px;
+    }
+
+    .section-clients .comments {
+        gap: 10px;
+    }
+
+    .section-clients .comments > .comment {
+        flex-direction: column;
+        align-items: center;
+        width: clamp(180px, 118.235px + 17.157vw, 250px);
+        padding: clamp(10px, -7.647px + 4.902vw, 30px) 10px;
+    }
+
+    .section-clients .comments > .comment > .info > p {
+        font-size: clamp(13px, 10.353px + 0.735vw, 16px);
+    }
+
+    /****************       MAIN START SECTION PROJECTS END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /****************       MAIN START SECTION TOUCH START */
+
+    section.touch {
+        padding: 200px 0px 200px 0px;
+    }
+
+    section.touch > div {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    section.touch .sp-raptor {
+        top: clamp(250px, 188.235px + 17.157vw, 320px);
+        left: 10px;
+    }
+
+    section.touch .sp-raptor > img {
+        width: clamp(80px, -8.235px + 24.51vw, 180px);
+    }
+
+    section.touch .sp-fire {
+        top: clamp(-80px, 127.06px - 26.961vw, 30px);
+        right: clamp(40px, -26.176px + 18.382vw, 115px);
+    }
+
+    section.touch .sp-fire > img {
+        width: clamp(100px, 11.765px + 24.51vw, 200px);
+    }
+
+    section.touch .wrap-touch-content {
+        width: 100%;
+        text-align: center;
+        gap: 30px;
+    }
+
+    section.touch .wrap-touch-content > h1 {
+        font-size: clamp(57px, 1.412px + 15.441vw, 120px);
+    }
+
+    section.touch .wrap-touch-content > h2 {
+        font-size: clamp(28px, 17.412px + 2.941vw, 40px);
+    }
+
+    section.touch .wrap-touch-content > h1 > br:nth-of-type(1) {
+        display: none;
+    }
+
+    section.touch .wrap-touch-inputs {
+        width: 100%;
+        margin-right: 0;
+        padding: 0;
+    }
+
+    section.touch .wrap-touch-inputs > .wrap-inp-mail_phone {
+        flex-direction: column;
+    }
+
+    section.touch .wrap-touch-inputs > .wrap-inp-mail_phone > div {
+        width: 100%;
+    }
+
+    /****************         MAIN START SECTION TOUCH END */
+
+    /************************************* MAIN END  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /************************************* FOOTER START  */
+
+    footer {
+        padding: clamp(25px, -5.881px + 8.578vw, 60px) 0;
+    }
+
+    footer::before {
+        top: -65px;
+    }
+
+    .foot-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .foot-content > .foot-text {
+        flex-direction: row;
+        gap: clamp(15px, 1.765px + 3.676vw, 30px);
+    }
+
+    .foot-content > .foot-text > h1 {
+        font-size: clamp(45px, -3.528px + 13.48vw, 100px);
+    }
+    
+    .foot-content > .foot-info {
+        gap: 0px;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .foot-content > .foot-info > div > span {
+        text-align: center;
+        font-size: clamp(18px, 14.472px + 0.98vw, 22px);
+    }
+
+    .foot-content > .foot-info > div > ul li,
+    .foot-content > .foot-info > div > ul > li > a {
+        font-size: clamp(14px, 12.236px + 0.49vw, 16px);
+    }
+
+    .elemets {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        row-gap: 15px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .elemets > div > svg {
+        width: 96px;
+    }
+
+    /*************************************   FOOTER END  */
+}
